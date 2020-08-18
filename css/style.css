@@ -1,0 +1,113 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    background: #eeeeee;
+    height: auto;
+}
+h1{
+    font-weight: 400;
+    font-size: 2.5rem; /* 1rem = By default 16px */
+    text-transform: uppercase;
+    margin: 0;
+}
+h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+img{
+    display: block;
+    width: 100%;
+}
+main{
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 20px 0px 40px rgba(0, 0,0,0.2),
+    -20px 0px 40px rgba(0, 0,0,0.2); /*horizontal offset, Vertical Offset, Blur, Color */
+}
+#landing{
+    background: #ffffff;
+}
+#landing-text{
+    display: flex;
+    flex: 0 1 40vw; /* flex grow, flex shrink , viewport width */
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0rem 1rem 0rem 1rem;
+}
+#landing-text h2{
+    color: #888888;
+}
+#landing-images{
+    background: url(https://images.unsplash.com/photo-1522922720537-c502d49af71a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b8025c95c7bbfc79f53c36b93b8f98c0&auto=format&fit=crop&w=633&q=80);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    flex: 0 1 60vw; /*flex grow, shrink, width */
+    margin: 0;
+}
+
+/* Button design */
+.btn{
+    padding: 0.5rem 2rem;
+    border: 2.5px #cccccc solid;
+    display: inline-block;
+    margin: 2rem 0 0;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #333333;
+    transition: background 500ms ease;
+    font: outline;
+    font-weight: bold;
+}
+.btn:hover{
+    background: tomato;
+    border: 1.5px #333333 solid;
+}
+
+#header{
+    padding: 1.5rem;
+    text-align: center;
+    background: #333333;
+    color: #ffffff;
+}
+#header h2{
+    border-left: dotted 2px white;
+    border-right: dotted 2px white;
+    display: inline-block;
+    padding: 0 1rem 0 1rem;
+}
+.caption{
+    padding: 0.8rem;
+    text-align: center;
+}
+footer{
+    text-align: center;
+    padding: 2rem 2rem;
+    margin: auto;
+    color: #333333;
+}
+footer h3{
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+/* Screen sizes 500px and Up */
+@media (min-width: 500px){
+    #landing{
+        display: flex;
+        height: 100%;
+    }
+    #landing-text{
+        height: 100vh;
+    }
+    
+    #landing-images{
+        height: 100vh;
+    } 
+} 
+
